@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Athiti';
+  font-size: 22px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #485a85;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.split {
+  float: right;
+}
+
+/* Portfolio grid styles */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: center;
+}
+
+.portfolio-grid a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid a:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Bottom left back button */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #485a85;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+  background-color: #324166;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html" class="split">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>P5.js work</h2>
+  <p>Here is all of my p5.js work</p>
+</div>
+
+<!-- Image grid -->
+<div class="portfolio-grid">
+  <a href="p5_self_portrait_page.html">
+    <img src="image/selfportrait.png" alt="Project 1">
+  </a>
+  <a href="p5_drawing_tool_page.html">
+    <img src="image/drawing_tool_working.png" alt="Project 2">
+  </a>
+  <a href="p5_game_page.html">
+    <img src="image/game_screenshot.png" alt="Project 3">
+  </a>
+</div>
+
+<!-- Bottom left back button -->
+<a href="javascript:history.back()" class="back-button">← Back</a>
+
+</body>
+</html>

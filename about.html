@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Athiti';
+  font-size: 22px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #485a85;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.split {
+  float: right;
+  color: black;
+}
+
+/* ===== BOTTOM LEFT BACK BUTTON ===== */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #485a85;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+  background-color: #324166;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html" class="split">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>About</h2>
+  <p>Welcome to my about page</p>
+  <p>My name is Eric Nguyen. I'm a graphic designer with a passion for creativity and storytelling through visuals. I enjoy bringing ideas to life through design and animation, exploring ways to make my work engaging and expressive. In my free time, I work on personal projects that allow me to experiment with new techniques and continue growing as an artist.</p>
+</div>
+
+<!-- Bottom Left Back Button -->
+<a href="javascript:history.back()" class="back-button">← Back</a>
+
+</body>
+</html>

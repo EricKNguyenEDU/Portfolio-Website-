@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Athiti';
+  font-size: 22px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #485a85;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.split {
+  float: right;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.portfolio p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Zigzag layout */
+.zigzag {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.zigzag-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.zigzag-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.zigzag img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text {
+  width: 50%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Bring "Adobe Photoshop" and "Collage" text closer */
+.zigzag-item:nth-child(2),
+.zigzag-item:nth-child(4) {
+  gap: 10px;
+}
+
+.zigzag-item:nth-child(2) .text,
+.zigzag-item:nth-child(4) .text {
+  padding: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .zigzag-item {
+    flex-direction: column;
+  }
+
+  .zigzag-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .zigzag img, .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --- Bottom Left Back Button --- */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #485a85;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+  background-color: #324166;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html" class="split">About</a>
+</div>
+
+<div class="portfolio">
+  <h2>Glitch Art</h2>
+  <p>I use glitching in my images to represent a fractured perspective on life, showing how beauty and meaning can still emerge from distortion or imperfection. Through these works, I explore appreciation of life in different forms. The cherry blossoms symbolize new beginnings and the nature of existence, reminding us to cherish each moment. The evening sky highlights the overlooked beauty in nature, encouraging us to pause and admire it. And the image of men spending time together emphasizes the importance of valuing close relationships and treasuring the moments we share.</p>
+
+  <div class="zigzag">
+    <div class="zigzag-item">
+      <img src="image/note_pad_edit.png" alt="Project 1">
+      <div class="text">Notepad++</div>
+    </div>
+    <div class="zigzag-item">
+      <img src="image/photoshop_edit.png" alt="Project 2">
+      <div class="text">Adobe Photoshop</div>
+    </div>
+    <div class="zigzag-item">
+      <img src="image/audacity_edit.png" alt="Project 3">
+      <div class="text">Audacity</div>
+    </div>
+    <div class="zigzag-item">
+      <img src="image/glitch_collage.png" alt="Project 4">
+      <div class="text">Collage</div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Left Back Button -->
+<a href="javascript:history.back()" class="back-button">← Back</a>
+
+</body>
+</html>
+
+
+
+

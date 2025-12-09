@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Athiti';
+  font-size: 22px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #485a85;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.split {
+  float: right;
+  color: black;
+}
+
+/* Grid container for images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 10px;
+  padding: 16px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* --- Bottom Left Button --- */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #485a85;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+  background-color: #324166;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html" class="split">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>What Do You MEME?</h2>
+  <p>Memes and mashups in my piece were both fun and challenging to work with. At first, it was difficult to find the right memes, but once I did, they came together in a way that made sense. I think it’s interesting how different memes can still connect through similar meanings, especially when supported by text. My video is meant to represent what an average student experiences when they suddenly remember they have an assignment due the same day. Overall, the piece conveys the stress, urgency, and chaos of trying to finish and submit work on time.</p>
+</div>
+
+<!-- 5-image row grid -->
+<div class="image-grid">
+  <img src="image/meme_1.png" alt="Meme 1">
+  <img src="image/meme_2.png" alt="Meme 2">
+  <img src="image/meme_3.png" alt="Meme 3">
+  <img src="image/meme_4.png" alt="Meme 4">
+  <img src="image/meme_5.png" alt="Meme 5">
+</div>
+
+<!-- Centered video with caption -->
+<div style="text-align: center; margin: 20px 0;">
+  <video width="400" controls>
+    <source src="video/Meme_Video.mp4" type="video/mp4">
+    <source src="video/Meme_Video.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+  <p style="margin-top: 10px; font-weight: bold;">Meme Video</p>
+</div>
+
+<!-- Bottom Left Button -->
+<a href="javascript:history.back()" class="back-button">← Back</a>
+
+</body>
+</html>
+
+
